@@ -1,0 +1,64 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "zuhri",
+      "email": "zuhrisurya@gmail.com",
+      "password": "123"
+    },
+    {
+      "username": "zurex",
+      "email": "zurex@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "username": "paul gilbert",
+      "email": "z@gmail.com",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "username": "z",
+      "email": "",
+      "password": "12",
+      "id": 4
+    },
+    {
+      "username": "zhi",
+      "email": "ajlsdlj",
+      "password": "123",
+      "id": 5
+    }
+  ],
+  "product": [
+    {
+      "desc": "1500 cc turbo engine , electric",
+      "name": "BMW i8",
+      "price": "2,000,000,000",
+      "src": "https://a6914f8cc098ce7fc865-d027ec38579ba4a57c2178377a8a5a7e.ssl.cf1.rackcdn.com/WBY2Z6C51K7D36096/e338d1124a3cf080631424f80cc5fcd8.jpg",
+      "id": 1
+    },
+    {
+      "desc": "175cc",
+      "name": "kawasaki w175",
+      "price": "75,000,000",
+      "src": "https://www.autos.id/wp-content/uploads/2017/11/kawasaki-W175w.jpg",
+      "id": 2
+    },
+    {
+      "desc": "Helm",
+      "name": "Helm Rouge",
+      "price": "300,000",
+      "src": "https://ecs7.tokopedia.net/img/cache/700/product-1/2016/8/2/8684444/8684444_4cccc7a8-9e49-40b7-829c-9f4960d9b1c5.jpg",
+      "id": 4
+    },
+    {
+      "desc": "Tesla Sx",
+      "name": "Mobil Electric",
+      "price": "2,000,000,000",
+      "src": "https://cdn.images.express.co.uk/img/dynamic/24/590x/secondary/Tesla-Roadster-1897777.jpg?r=1559549484475",
+      "id": 5
+    }
+  ]
+}
