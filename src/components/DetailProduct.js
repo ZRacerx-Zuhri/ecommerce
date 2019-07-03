@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import { Button } from "react-bootstrap";
+import { Button } from "reactstrap";
 
 import axios from "axios";
 
@@ -18,13 +18,15 @@ class DetailProduct extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Detail Product: {this.state.product.id}</h1>
-        <h1>
-          pic
-          <img src={this.state.product.src} />
-        </h1>
-        <h1>Detail Product: {this.state.product.name}</h1>
+      <div className="card col-3 m-5">
+        <img className="card-img-top" src={this.state.product.src} alt="" />
+        <div className="card-body">
+          <h5 className="card-title">{this.state.product.name} </h5>
+          <p className="card-text">{this.state.product.desc}</p>
+          <p className="card-text">Rp. {this.state.product.price}</p>
+          <input type="text" />
+          <Button color="primary">Add To Cart</Button>
+        </div>
       </div>
     );
   }

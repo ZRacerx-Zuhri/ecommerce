@@ -25,12 +25,28 @@ class Home extends Component {
 
   onBtnSearch = () => {
     const name = this.name.value;
-    // const min = this.min.value;
-    // const max = this.max.value;
+    const min = parseInt(this.min.value);
+    const max = parseInt(this.max.value);
 
     var arrsearch = this.state.searchProducts.filter(item => {
-      if (item.name.toLowerCase().includes(name)) {
-        return true;
+      if (isNaN(min) && isNaN(max)) {
+        return item.name.toLowerCase().includes(name.toLowerCase());
+      } else if (isNaN(min)) {
+        return (
+          item.name.toLowerCase().includes(name.toLowerCase()) &&
+          item.price <= max
+        );
+      } else if (isNaN(max)) {
+        return (
+          item.name.toLowerCase().includes(name.toLowerCase()) &&
+          item.price >= min
+        );
+      } else {
+        return (
+          item.name.toLowerCase().includes(name.toLowerCase()) &&
+          item.price >= min &&
+          item.price <= max
+        );
       }
     });
 

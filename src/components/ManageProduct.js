@@ -29,14 +29,14 @@ class ManageProduct extends Component {
   edit2 = () => {
     const desc = this.nameddes.value;
     const name = this.named.value;
-    const price = parseInt(this.namedharga.value).toLocaleString();
+    const price = parseInt(this.namedharga.value);
     const pict = this.namedpic.value;
     Axios.put(`http://localhost:2019/product/${this.state.editproduct.id}`, {
       desc,
       name,
       price,
       src: pict
-    }).then(res => {
+    }).then(() => {
       //
       this.getProduct();
     });
@@ -84,7 +84,7 @@ class ManageProduct extends Component {
     return this.state.product.map(item => {
       return (
         <tr>
-          <td contentEditable="true">{item.id}</td>
+          <td>{item.id}</td>
           <td>{item.name}</td>
           <td>{item.desc}</td>
           <td>Rp. {item.price}</td>

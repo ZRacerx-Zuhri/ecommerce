@@ -16,6 +16,7 @@ import {
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { onLogoutUser } from "../action";
+import { Redirect } from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -34,6 +35,7 @@ class Header extends Component {
   onButtonClick = () => {
     // menghapus username dari redux state
     this.props.onLogoutUser();
+    return <Redirect to="/" />;
   };
   render() {
     if (this.props.user.username === "") {
@@ -83,8 +85,17 @@ class Header extends Component {
                   Options
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>Option 1</DropdownItem>
-                  <DropdownItem>Option 2</DropdownItem>
+                  <Link to="/manageproduct">
+                    <DropdownItem>Manage Products</DropdownItem>
+                  </Link>
+                  <Link to="/cart">
+                    <DropdownItem>
+                      <a href="#" class="btn btn-info btn-lg">
+                        <span class="glyphicon glyphicon-shopping-cart" />{" "}
+                        Shopping Cart
+                      </a>
+                    </DropdownItem>
+                  </Link>
                   <DropdownItem divider />
                   <Button
                     className="dropdown-item"

@@ -7,6 +7,7 @@ import Header from "./Header";
 import cookies from "universal-cookie";
 import { connect } from "react-redux";
 import { keeplogin } from "../action";
+import Cart from "./Cart";
 
 import ManageProduct from "./ManageProduct";
 import DetailProduct from "./DetailProduct";
@@ -26,11 +27,13 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Header />
+
           <Route path="/" exact component={Home} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
           <Route path="/manageproduct" component={ManageProduct} />
           <Route path="/detailproduct/:product_id" component={DetailProduct} />
+          <Route path="/cart" component={Cart} />
         </div>
       </BrowserRouter>
     );
