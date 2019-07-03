@@ -41,7 +41,7 @@
     {
       "desc": "1500 cc turbo engine , electric",
       "name": "BMW i8",
-      "price": 2000000000,
+      "price": 2000000,
       "src": "https://cdn.bringatrailer.com/wp-content/uploads/2018/02/151914333421c34eSAM_8588-940x627.jpg",
       "id": 1
     },
@@ -67,5 +67,16 @@
       "id": 5
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "productid": 2,
+      "userid": 2,
+      "nameproduct": "kawasaki w175",
+      "price": 75000000,
+      "desc": "175cc",
+      "src": "https://www.autos.id/wp-content/uploads/2017/11/kawasaki-W175w.jpg",
+      "qty": 1,
+      "id": 1
+    }
+  ]
 }
